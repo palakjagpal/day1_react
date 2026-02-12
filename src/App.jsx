@@ -53,10 +53,17 @@ import PasswordShowHide from "./PasswordShowHide.jsx";
 import IconShowHide from "./IconShowHide.jsx";
 import ValueChange from "./ValueChange.jsx";
 import ConditionRender from "./ConditionRender.jsx";
+import Demo from "./demo.jsx";
+import Quiz from "./Quiz.jsx";
 
+/*
 function App(){
   return(
     <>
+    <Quiz/>
+    <br></br>
+    <br></br>
+      <Demo />
       <ConditionRender />
       <br></br>
       <br></br>
@@ -70,6 +77,15 @@ function App(){
       <br></br>
       <hr></hr>
       <ValueChange />
+    </>
+  )
+}
+  */
+
+function App(){
+  return(
+    <>
+    <Quiz/>
     </>
   )
 }

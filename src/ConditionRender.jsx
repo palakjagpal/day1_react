@@ -12,6 +12,7 @@ function ConditionRender(){
             {count >= 5 && <Welcome/>}
             {count == 10 && <Welcome/> && <> to the world</>}
             {count >15 && <Welcome/> && <> to the world of React</>}
+
         </>
     )
 }

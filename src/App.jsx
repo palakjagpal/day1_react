@@ -55,7 +55,7 @@ import ValueChange from "./ValueChange.jsx";
 import ConditionRender from "./ConditionRender.jsx";
 import Demo from "./demo.jsx";
 import Quiz from "./Quiz.jsx";
-
+import Prop from "./Prop.jsx";
 /*
 function App(){
   return(
@@ -85,8 +85,21 @@ function App(){
 function App(){
   return(
     <>
-    <Quiz/>
+    <Prop/>
+
     </>
   )
 }
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+

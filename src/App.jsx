@@ -83,13 +83,9 @@ function App(){
   */
 
 function App(){
-  return(
-    <>
-    <Prop/>
-
-    </>
-  )
+  return <Prop name ="Palak" />
 }
+
 export default App;
 
 

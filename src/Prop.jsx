@@ -1,7 +1,9 @@
-function Prop(){
+function Prop(props){
     return(
-        <h1>Props Demo</h1>
-
+        <div>
+            <h1>Props Demo</h1>
+            <h2>Welcome {props.name} !!</h2>
+        </div>
     )
 }
 

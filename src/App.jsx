@@ -7,6 +7,8 @@ import Quiz from "./Quiz.jsx";
 import Prop from "./Prop.jsx";
 import Parent from "./Parent.jsx";
 import Child from "./Child.jsx";
+import ButtonProp from "./ButtonProp.jsx";
+import {useState} from "react";
 
 /***************Components Creation****************/
 /*import Compo from "./Compo.jsx";
@@ -94,18 +96,43 @@ function App(){
 }
 */
 
+/*
 function App(){
   return(
     <div>
-      <ConditionRender/>
-      <ValueChange/>
-      <PasswordShowHide/>
-      <IconShowHide/>
       <Parent/>
     </div>
   )
 }
+*/
 
+function App(){
+  const [count, setcount] = useState(0);
+
+  const inc = () =>{
+    setcount(count+1);
+    console.log("Increment clicked")
+    console.log("count : ",count)
+  }
+
+  const dec = () =>{
+    setcount(count-1);
+    console.log("Decrement clicked")
+    console.log("count : ",count)
+  }
+
+  const reset = () => {
+    setcount(0)
+    console.log("Reset clicked")
+    console.log(count);
+  }
+
+  return(
+    <div>
+      <ButtonProp count={count} inc={inc} dec={dec} reset={reset}/>
+    </div>
+  )
+}
 
 export default App;
 

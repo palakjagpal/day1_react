@@ -11,7 +11,7 @@ function Quiz(){
         const op =operators[Math.floor(Math.random()*operators.length)];
         console.log(`${a} ${op} ${b}` )
         const result = eval(`${a} ${op} ${b}`);
-         return result;
+        return result;
         
     }
     return(

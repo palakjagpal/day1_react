@@ -1,3 +1,12 @@
+import PasswordShowHide from "./PasswordShowHide.jsx";
+import IconShowHide from "./IconShowHide.jsx";
+import ValueChange from "./ValueChange.jsx";
+import ConditionRender from "./ConditionRender.jsx";
+import Demo from "./demo.jsx";
+import Quiz from "./Quiz.jsx";
+import Prop from "./Prop.jsx";
+import Parent from "./Parent.jsx";
+import Child from "./Child.jsx";
 
 /***************Components Creation****************/
 /*import Compo from "./Compo.jsx";
@@ -49,13 +58,8 @@ function App(){
   */
 
 /***************Password Show Hide****************/
-import PasswordShowHide from "./PasswordShowHide.jsx";
-import IconShowHide from "./IconShowHide.jsx";
-import ValueChange from "./ValueChange.jsx";
-import ConditionRender from "./ConditionRender.jsx";
-import Demo from "./demo.jsx";
-import Quiz from "./Quiz.jsx";
-import Prop from "./Prop.jsx";
+
+
 /*
 function App(){
   return(
@@ -82,9 +86,26 @@ function App(){
 }
   */
 
+
+/************Props****************** */
+/*
 function App(){
   return <Prop name ="Palak" />
 }
+*/
+
+function App(){
+  return(
+    <div>
+      <ConditionRender/>
+      <ValueChange/>
+      <PasswordShowHide/>
+      <IconShowHide/>
+      <Parent/>
+    </div>
+  )
+}
+
 
 export default App;
 

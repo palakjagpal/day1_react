@@ -1,3 +1,4 @@
+import "./index.css";
 import PasswordShowHide from "./PasswordShowHide.jsx";
 import IconShowHide from "./IconShowHide.jsx";
 import ValueChange from "./ValueChange.jsx";
@@ -122,9 +123,9 @@ function App(){
   }
 
   const reset = () => {
-    setcount(0)
+    setcount(0);
     console.log("Reset clicked")
-    console.log(count);
+    console.log("count : ",count);
   }
 
   return(

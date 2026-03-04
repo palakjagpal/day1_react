@@ -1,8 +1,8 @@
-/* Basic reset & box-sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: grab;
 }
 
 body {
@@ -11,14 +11,17 @@ body {
   padding: 20px;
 }
 
-/* Main heading */
 h2 {
   text-align: center;
   margin-bottom: 20px;
   color: #333;
 }
 
-/* Loading and error messages */
+#h1{
+    color : #142935;
+    font-size: 2rem;
+}
+
 p, h2 {
   text-align: center;
 }
@@ -30,7 +33,6 @@ h2 {
   color: #d32f2f;
 }
 
-/* Grid container for the cards */
 .anime-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -38,7 +40,6 @@ h2 {
   margin-top: 20px;
 }
 
-/* Individual card */
 .card {
   background: white;
   border-radius: 10px;
@@ -54,15 +55,13 @@ h2 {
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
-/* Card image */
 .card-img {
   width: 100%;
-  height: 100px;
+  height: 170px;
   object-fit: contain;        /* Ensures image covers area without distortion */
   border-bottom: 2px solid #f0f0f0;
 }
 
-/* Card content area */
 .card-content {
   padding: 16px;
 }
@@ -88,13 +87,11 @@ h2 {
   font-weight: 600;
 }
 
-/* Optional: style for the affiliation to stand out */
 .card-content p:last-of-type {
   font-style: italic;
   color: #666;
 }
 
-/* Responsive tweaks */
 @media (max-width: 600px) {
   .anime-grid {
     grid-template-columns: 1fr;   /* Stack cards on small screens */

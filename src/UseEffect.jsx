@@ -34,8 +34,10 @@ function UseEffect(){
 
     return(
         <>
-            <h2>Dragon Ball</h2>
-            <div>   
+            <h1 id="h1">Dragon Ball API</h1>
+            <hr></hr>
+            <br></br>
+            <div className="anime-grid">   
                 {loading && <p>Loading Anime.....</p>}
                 {error && <h2>{error}</h2>}
 

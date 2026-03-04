@@ -11,5 +11,5 @@ function ButtonProp({count,inc,dec,reset}){
         </div>
     )
 }
-
+ 
 export default ButtonProp;

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import "./index.css";
 import PasswordShowHide from "./PasswordShowHide.jsx";
 import IconShowHide from "./IconShowHide.jsx";
@@ -10,6 +11,7 @@ import Parent from "./Parent.jsx";
 import Child from "./Child.jsx";
 import ButtonProp from "./ButtonProp.jsx";
 import {useState} from "react";
+import UseEffect from "./UseEffect.jsx";
 
 /***************Components Creation****************/
 /*import Compo from "./Compo.jsx";
@@ -107,6 +109,7 @@ function App(){
 }
 */
 
+/*
 function App(){
   const [count, setcount] = useState(0);
 
@@ -137,6 +140,17 @@ function App(){
 
 export default App;
 
+*/
+
+function App(){
+  return(
+    <>
+      <UseEffect/>
+    </>
+  )
+}
+
+export default App;
 
 
 

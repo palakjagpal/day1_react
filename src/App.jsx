@@ -12,6 +12,7 @@ import Child from "./Child.jsx";
 import ButtonProp from "./ButtonProp.jsx";
 import {useState} from "react";
 import UseEffect from "./UseEffect.jsx";
+import PotterApi from "./PotterApi.jsx";
 
 /***************Components Creation****************/
 /*import Compo from "./Compo.jsx";
@@ -145,7 +146,7 @@ export default App;
 function App(){
   return(
     <>
-      <UseEffect/>
+      <PotterApi/>
     </>
   )
 }

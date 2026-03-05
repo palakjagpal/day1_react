@@ -11,8 +11,12 @@ import Parent from "./Parent.jsx";
 import Child from "./Child.jsx";
 import ButtonProp from "./ButtonProp.jsx";
 import {useState} from "react";
-import UseEffect from "./UseEffect.jsx";
-import PotterApi from "./PotterApi.jsx";
+/*import UseEffect from "./UseEffect.jsx";*/
+/*import PotterApi from "./PotterApi.jsx";*/
+import Login from "./Login.jsx";
+import Register from "./Register.jsx";
+import Home from "./Home.jsx";
+import {BrowserRouter, Routes, Route, Link} from "react-router";
 
 /***************Components Creation****************/
 /*import Compo from "./Compo.jsx";
@@ -110,6 +114,7 @@ function App(){
 }
 */
 
+/**************Props with States*********************** */
 /*
 function App(){
   const [count, setcount] = useState(0);
@@ -143,6 +148,8 @@ export default App;
 
 */
 
+/***************UseEffect*************** */
+/*
 function App(){
   return(
     <>
@@ -152,7 +159,29 @@ function App(){
 }
 
 export default App;
+*/
 
+/***********React Router DOM*************** */
+function App(){
+  return(
+    <>
+      <BrowserRouter>
+        <Link to="/home">HOME |</Link>
+        <Link to="/login">LOGIN |</Link>
+        <Link to="/register">REGISTER</Link>
+        <hr></hr>
+        <Routes>
+          <Route path="/home" element={<Home/>}/>
+          <Route path="/login" element={<Login/>} />
+          <Route path="/register" element={<Register/>} />
+        </Routes>
+      </BrowserRouter>
+
+    </>
+  )
+}
+
+export default App;
 
 
 

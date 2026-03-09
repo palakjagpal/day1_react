@@ -18,6 +18,7 @@ import Register from "./Register.jsx";
 import Home from "./Home.jsx";
 import {BrowserRouter, Routes, Route, Link} from "react-router";
 import Axios_Demo from "./Axios_Demo.jsx";
+import Del_Axios from "./Del_Axios.jsx";
 /*import PotterApi from "./PotterApi.jsx";*/
 
 /***************Components Creation****************/
@@ -192,7 +193,7 @@ export default App;
 function App(){
   return(
     <>
-      <Axios_Demo/>
+      <Del_Axios/>
     </>
   )
 }

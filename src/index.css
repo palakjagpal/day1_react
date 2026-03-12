@@ -4,28 +4,45 @@
 }
 
 button {
-    position: inline-block;
-    top:50%;
-    background-color:#0a0a23;
-    color: #fff;
-    border:none;
-    border-radius:10px;
-    padding: 10px 12px;
-    margin-top: 14px;
-  }
+  display: block;
+  margin: 0 auto;
+  font-family: "Comfortaa";
+  outline: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #0a0a23;
+  background-color: #0a0a23;
+  color: whitesmoke;
+  transition: all 0.2s ease-in-out;
+}
 
 button:hover{
+  transform: scaleY(1);
   background-color: #fff;
   color: #0a0a23;
   cursor: grab;
   border: 1px solid #0a0a23;
+  outline: none;
 }
 
 input{
+  display: block;
+  margin: 0 auto;
   border: 1px solid #0a0a23;
   border-radius: 10px;
   padding: 10px 12px;
-  margin-top: 14px;
+  font-family: "Comfortaa";
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+input:hover{
+  outline: none;
+}
+
+input:focus{
+  font-family: "Comfortaa";
+  cursor: grab;
 }
 
 a{
@@ -35,4 +52,8 @@ a{
 
 h1,label{
   color: #0a0a23;
+}
+
+p{
+  font-family: "Comfortaa";
 }

@@ -53,6 +53,7 @@ function Weather_api(){
                         <br></br>
                         <p><b>What sky says? : </b>{weather.weather[0].main}({weather.weather[0].description})</p> 
                         <br></br>
+                        <p><b>Wind : </b>{weather.wind.speed}</p>
                     </div> 
                     )
                 }

@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import "./index.css";
-import PasswordShowHide from "./PasswordShowHide.jsx";
+/*import PasswordShowHide from "./PasswordShowHide.jsx";
 import IconShowHide from "./IconShowHide.jsx";
 import ValueChange from "./ValueChange.jsx";
 import ConditionRender from "./ConditionRender.jsx";
@@ -11,16 +11,16 @@ import Parent from "./Parent.jsx";
 import Child from "./Child.jsx";
 import ButtonProp from "./ButtonProp.jsx";
 import {useState} from "react";
-/*import UseEffect from "./UseEffect.jsx";*/
-/*import PotterApi from "./PotterApi.jsx";*/
+import UseEffect from "./UseEffect.jsx";
+import PotterApi from "./PotterApi.jsx";
 import Login from "./Login.jsx";
 import Register from "./Register.jsx";
 import Home from "./Home.jsx";
 import {BrowserRouter, Routes, Route, Link} from "react-router";
 import Axios_Demo from "./Axios_Demo.jsx";
 import Del_Axios from "./Del_Axios.jsx";
-/*import PotterApi from "./PotterApi.jsx";*/
-import Axios_Insert from "./Axios_Insert.jsx";
+/*import PotterApi from "./PotterApi.jsx";
+import Axios_Insert from "./Axios_Insert.jsx";*/
 import Weather_api from "./Weather_api.jsx";
 
 /***************Components Creation****************/

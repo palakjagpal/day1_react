@@ -21,7 +21,7 @@ import Axios_Demo from "./Axios_Demo.jsx";
 import Del_Axios from "./Del_Axios.jsx";
 /*import PotterApi from "./PotterApi.jsx";*/
 import Axios_Insert from "./Axios_Insert.jsx";
-import Weather_api from "./Weather-api.jsx";
+import Weather_api from "./Weather_api.jsx";
 
 /***************Components Creation****************/
 /*import Compo from "./Compo.jsx";

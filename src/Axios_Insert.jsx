@@ -1,4 +1,3 @@
-/* eslint-disable no-useless-escape */
 /* eslint-disable no-undef */
 /* eslint-disable react-hooks/immutability */
 import { useEffect, useState } from "react";

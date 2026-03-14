@@ -20,7 +20,7 @@ function UserAuth(){
 
         if(email.trim() === "" && password.trim() === ""){
             seterror("Please enter data!");
-            console.log("Please enter data!");
+            console.log("Please enter your credentials!");
             return;
         }
          

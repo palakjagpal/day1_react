@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import "./index.css";
+/*import "./index.css";*/
 /*import PasswordShowHide from "./PasswordShowHide.jsx";
 import IconShowHide from "./IconShowHide.jsx";
 import ValueChange from "./ValueChange.jsx";
@@ -20,8 +20,9 @@ import {BrowserRouter, Routes, Route, Link} from "react-router";
 import Axios_Demo from "./Axios_Demo.jsx";
 import Del_Axios from "./Del_Axios.jsx";
 /*import PotterApi from "./PotterApi.jsx";
-import Axios_Insert from "./Axios_Insert.jsx";*/
-import Weather_api from "./Weather_api.jsx";
+import Axios_Insert from "./Axios_Insert.jsx";
+import Weather_api from "./Weather_api.jsx";*/
+import UserAuth from "./UserAuth";
 
 /***************Components Creation****************/
 /*import Compo from "./Compo.jsx";
@@ -192,6 +193,7 @@ export default App;
 */
 
 /************ AXIOS ************ */
+/*
 function App(){
   return(
     <>
@@ -201,7 +203,18 @@ function App(){
 }
 
 export default App;
+*/
 
+/**********User Auth**************** */
+function App(){
+  return(
+    <>
+      <UserAuth/>
+    </>
+  )
+}
+
+export default App;
 
 
 

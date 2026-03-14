@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-//import "./Weather_api.css";
+import "./Weather_api.css";
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 

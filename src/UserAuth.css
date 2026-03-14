@@ -57,11 +57,13 @@ body{
   outline:none;
   font-size:15px;
   transition:0.25s;
+  font-family: "Comfortaa";
 }
 
 .field input:focus{
   border-color:#0f6b5c;
   box-shadow:0 0 0 3px rgba(15,107,92,0.1);
+  font-family: "Comfortaa";
 }
 
 .field i{
@@ -71,10 +73,12 @@ body{
   cursor:pointer;
   color:#5b8b80;
   transition:0.2s;
+  cursor: grab;
 }
 
 .field i:hover{
   color:#0f6b5c;
+  cursor: grab;
 }
 
 button{

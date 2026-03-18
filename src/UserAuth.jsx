@@ -10,6 +10,7 @@ function UserAuth(){
     const [error, seterror] = useState("");
     const [show, setshow] = useState(true);
     const [success, setsuccess] = useState("");
+    const [loading,setloading] = useState(false);
 
     const email_regex = /^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/;
 
@@ -17,9 +18,11 @@ function UserAuth(){
 
     async function UserLogin(e) {
         e.preventDefault();
+        setloading(true);
 
         if(email.trim() === "" && password.trim() === ""){
             seterror("Please enter data!");
+            setloading(false);
             console.log("Please enter your credentials!");
             return;
         }
@@ -27,6 +30,7 @@ function UserAuth(){
         if(!email_regex.test(email)){
             console.log("Please enter a valid email address");
             seterror("Please enter a valid email address");
+            setloading(false);
             return;
         }
 
@@ -51,7 +55,26 @@ function UserAuth(){
                 console.log("Error : ", err);
                 setemail("");
                 setpassword("");
+                setloading(false);
+        }finally{
+            setloading(false);
+        }
+    }
+
+    function logout(){
+        try{
+            if(token){
+                localStorage.removeItem("token");
+                settoken(null);
+                setsuccess("User logged out successfully");
+                seterror("");
+                setdata("");
+                console.log("User logged out successfully");
             }
+        }catch(err){
+            seterror("Error logging out");
+            console.log("Error logging out : ",err)
+        }
     }
 
     return(
@@ -82,11 +105,15 @@ function UserAuth(){
                                 seterror(""); 
                                 setsuccess("");
                             }}></input>
-                            <i className = { show ? "fa-solid fa-eye" : "fa-solid fa-eye-slash"} 
+                            <i className = { show ? "fa-solid fa-eye-slash" : "fa-solid fa-eye"} 
                             onClick = {() => setshow((s) => !s)}></i>
                         </div>
-                        <button type="submit">LOGIN</button>
+                        <button type="submit" disabled={loading}>
+                            {loading ? "Logging in..." : "LOGIN"}
+                        </button>
                     </form>
+
+                    {success && <button onClick={logout()}>LOGOUT</button>}
                 </div>
         </>
     )

@@ -93,7 +93,9 @@ button{
   cursor:pointer;
   transition:0.2s;
   box-shadow:0 8px 16px rgba(15,107,92,0.2);
+  font-family: "Comfortaa";
 }
+
 
 button:hover{
   background:#0a5347;
@@ -147,11 +149,12 @@ button:focus{
 @media (max-width:480px){
 
   .main{
-    width:90%;
+    width:100%;
     padding:30px 20px;
   }
 
   .main h1{
     font-size:24px;
   }
+
 }

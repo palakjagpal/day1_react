@@ -1,61 +1,15 @@
 :root{
   font-family: "Comfortaa";
-  cursor: grab;
 }
 
-/*
-button {
-  display: block;
-  margin: 0 auto;
-  font-family: "Comfortaa";
-  outline: none;
-  padding: 10px 12px;
-  border-radius: 10px;
-  border: 1px solid #0a0a23;
-  background-color: #0a0a23;
-  color: whitesmoke;
-  transition: all 0.2s ease-in-out;
-}
-
-button:hover{
-  transform: scaleY(1);
-  background-color: #fff;
-  color: #0a0a23;
-  cursor: grab;
-  border: 1px solid #0a0a23;
-  outline: none;
+.main{
+  margin : 10%;
 }
 
 input{
-  display: block;
-  margin: 0 auto;
-  border: 1px solid #0a0a23;
-  border-radius: 10px;
-  padding: 10px 12px;
-  font-family: "Comfortaa";
-  transition: all 0.2s ease-in-out;
-  outline: none;
+  padding: 4px 8px;
 }
 
-input:hover{
-  outline: none;
+button{
+  padding: 4px 8px;
 }
-
-input:focus{
-  font-family: "Comfortaa";
-  cursor: grab;
-}
-
-a{
-  color: #0a0a23;
-  text-decoration: none ;
-}
-
-h1,label{
-  color: #0a0a23;
-}
-
-p{
-  font-family: "Comfortaa";
-}
-  */

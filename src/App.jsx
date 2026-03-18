@@ -21,8 +21,11 @@ import Axios_Demo from "./Axios_Demo.jsx";
 import Del_Axios from "./Del_Axios.jsx";
 /*import PotterApi from "./PotterApi.jsx";
 import Axios_Insert from "./Axios_Insert.jsx";
-import Weather_api from "./Weather_api.jsx";*/
+import Weather_api from "./Weather_api.jsx";
 import UserAuth from "./UserAuth";
+import UserAuth from "./UserAuth.jsx";*/
+import Axios_Update from "./Axios_Update";
+
 
 /***************Components Creation****************/
 /*import Compo from "./Compo.jsx";
@@ -193,19 +196,19 @@ export default App;
 */
 
 /************ AXIOS ************ */
-/*
+
 function App(){
   return(
     <>
-      <Weather_api/>
+      <Axios_Update/>
     </>
   )
 }
 
 export default App;
-*/
 
-/**********User Auth**************** */
+
+/**********User Auth**************** 
 function App(){
   return(
     <>
@@ -215,6 +218,7 @@ function App(){
 }
 
 export default App;
+*/
 
 
 

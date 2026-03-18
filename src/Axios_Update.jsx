@@ -27,6 +27,25 @@ function Axios_Update(){
         setdata([response.data, ...data]);
         setname("");    
     }*/
+   /*
+    async function update(item){
+        e.preventDefault();
+        setname(item?.name);
+        seteditID(item?.id);
+        if(editID){
+            const response = await axios.put(`${api_url}/${editID}`,{
+                name : name,
+                username : "Demo",
+                email : "example"
+            })
+            const newData = data.map((item) => 
+                item.id === editID ? response.data : item
+            )
+            setdata(newData);
+            seteditID(null);
+        }
+    }
+   */
 
     //if the user clicks the edit button then if part will run otherwise else part
     async function add_update(e){
@@ -51,14 +70,6 @@ function Axios_Update(){
         setname("");  
     }
 
-    async function del(id){
-        await axios.delete(`${api_url}/${id}`)
-        setdata(data.filter(
-            (item) => item.id !== id
-        ))
-
-    }
-
     //fill the input only no processing
     //Click Edit → data appears in input
     //Modify data
@@ -68,6 +79,16 @@ function Axios_Update(){
         seteditID(item?.id);
     }
 
+
+    async function del(id){
+        await axios.delete(`${api_url}/${id}`)
+        setdata(data.filter(
+            (item) => item.id !== id
+        ))
+
+    }
+
+    
     return(
         <>
             <div className="main">

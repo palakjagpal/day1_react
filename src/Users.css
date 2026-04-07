@@ -1,0 +1,178 @@
+/* Main container */
+.main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: #f9fafb;
+  border-radius: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Heading */
+.main h2 {
+  text-align: center;
+  color: #1f2937;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+/* Form area */
+.form {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  margin-bottom: 2rem;
+}
+
+.form form {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 40px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.2s;
+  background: #ffffff;
+}
+
+.form input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.form button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.8rem;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.form button:hover {
+  background: #2563eb;
+}
+
+.form button:active {
+  transform: scale(0.97);
+}
+
+/* Users list container */
+.users {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Individual user card */
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: 0.2s;
+}
+
+.user-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Text section */
+.user-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  max-width: 70%;
+}
+
+.user-id {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.user-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1e293b;
+  word-break: break-word;
+}
+
+/* Buttons container */
+.user-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Edit button */
+.edit-btn {
+  background: #f59e0b;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: 0.2s;
+}
+
+.edit-btn:hover {
+  background: #d97706;
+}
+
+/* Delete button */
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 500px) {
+  .main {
+    margin: 1rem;
+    padding: 0.75rem;
+  }
+
+  .form form {
+    flex-direction: column;
+  }
+
+  .form button {
+    width: 100%;
+  }
+
+  .user-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .user-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

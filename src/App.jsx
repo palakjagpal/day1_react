@@ -24,7 +24,7 @@ import Axios_Insert from "./Axios_Insert.jsx";
 import Weather_api from "./Weather_api.jsx";
 import UserAuth from "./UserAuth";
 import UserAuth from "./UserAuth.jsx";*/
-import Axios_Update from "./Axios_Update";
+import Users from "./Users";
 
 
 /***************Components Creation****************/
@@ -200,7 +200,7 @@ export default App;
 function App(){
   return(
     <>
-      <Axios_Update/>
+      <Users/>
     </>
   )
 }
